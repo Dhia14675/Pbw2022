@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+ <html>
+<head>
+    <title>Website Video Subtittle</title>
+</head>
+<body bgcolor="black">
+    <center>
+    <h1><font color ="White">Story WA Naif Piknik'72</font></h1> 
+    <!--video diganti disini-->
+    <video controls autoplay id="myVideo" weidth="500" height="400" loop>
+        <source type="video/mp4" src="media/videoplayback.mp4">
+    <!-- Subtittle ada disini-->
+        <track src="subtittle.vtt" kind="subtitles" srclang="en" label="Indonesia" default>
+    </video>
+    <p>
+        <button onclick="playVid()" type="button">Play</button>
+        <button onclick="pauseVid()" type="button">Pause</button>
+    </p>
+    </center>
+</body>
+<script>
+    var vid = document.getElementById("myVideo");
+        vid.volume=0.2;
+function playVid() {
+    vid.play();
+}
+
+function pauseVid() {
+    vid.pause();
+} 
+</script>
+</html>
