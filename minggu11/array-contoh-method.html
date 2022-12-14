@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Filter</title>
+</head>
+<body>
+    <script>
+        //Method filter
+        const angka = [1,2,3,4,5,6,7,8,9];
+
+        //ambil data yang hanya dibagi 2
+        const filteredArray = angka.filter(item => item % 2 === 0);
+
+        console.log(filteredArray)// ->[2,4,6,8]
+
+        //method include
+        var hewan = ["Ayam","Kuda","Sapi","Kucing","Anjing"];
+        //cek apakah anjing sudah ada didalam array tanaman
+        var adaAnjing = hewan.includes("Anjing");
+        console.log(adaAnjing);//->true
+
+        //apakah ada babi?
+        var adaBabi = hewan.includes("Babi");
+
+        console.log(adaBabi);//->false
+
+        //Method Short
+        var alfabet = ['a','b','c','d','e','f','g'];
+        var anka = [3,1,2,4,6,7,5];
+
+        console.log(alfabet.sort());
+        console.log(anka.sort());
+    </script>
+</body>
+</html>
